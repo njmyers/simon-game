@@ -1,0 +1,212 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 4em;
+}
+
+button {
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  transition: background .1s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+.background {
+  position: relative;
+  background: #d0d091;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid {
+ margin-top: -100px;
+}
+
+.game-container{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.simon-buttons {
+  height: 415px;
+  width: 415px;
+}
+
+#green, #yellow, #red, #blue {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.green-border, .yellow-border, .red-border, .blue-border {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  background: black;
+}
+
+#green {
+  background-color: green;
+  -webkit-clip-path: circle(150px at 150px 150px);
+  clip-path: circle(150px at 150px 150px);
+  left: 5px;
+  top: 5px;
+}
+
+.green-border{
+  -webkit-clip-path: circle(155px at 155px 155px);
+  clip-path: circle(155px at 155px 155px);
+  left: 0;
+  top: 0;
+}
+
+#yellow {
+  background-color: yellow;
+  -webkit-clip-path: circle(150px at 150px 50px);
+  clip-path: circle(150px at 150px 50px);
+  bottom: 5px;
+  left: 5px;
+}
+
+.yellow-border {
+  -webkit-clip-path: circle(155px at 155px 55px);
+  clip-path: circle(155px at 155px 55px);
+  bottom: 0;
+  left: 0;
+}
+
+#red {
+  background-color: red;
+  -webkit-clip-path: circle(150px at 50px 50px);
+  clip-path: circle(150px at 50px 50px);
+  right: 5px;
+  bottom: 5px;
+}
+
+.red-border {
+  -webkit-clip-path: circle(155px at 55px 55px);
+  clip-path: circle(155px at 55px 55px);
+  right: 0;
+  bottom: 0;
+}
+
+#blue {
+  background-color: blue;
+  -webkit-clip-path: circle(150px at 50px 150px);
+  clip-path: circle(150px at 50px 150px);
+  right: 5px;
+  top: 5px;
+}
+
+.blue-border {
+  -webkit-clip-path: circle(155px at 55px 155px);
+  clip-path: circle(155px at 55px 155px);
+  right: 0;
+  top: 0;  
+}
+
+.circle-border {
+  height: 210px;
+  width: 210px;
+  background: black;
+  -webkit-clip-path: circle(105px at center);
+  clip-path: circle(105px at center);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-display {
+  -webkit-clip-path: circle(100px at center);
+  clip-path: circle(100px at center);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.display-container {
+  position: relative;
+}
+
+.counter-container {
+  background: #ffffff;
+  position: relative;
+  z-index: 999;
+  height: 200px;
+  width: 200px;
+}
+
+#counter, #start, #strict, #pace {
+  background: #421b1b;
+  position: absolute;
+  font-size: 28px;
+  color: #ff0000;
+  border-radius: 10px;
+  border: 2px black solid;    
+}
+
+#counter {
+  width: 56px;
+  height: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 20%;
+}
+
+#strict {
+  width: 54px;
+  height: 22px;
+  font-size: 12px;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+#pace {
+  width: 54px;
+  height: 22px;
+  font-size: 12px;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+#start {
+  text-align: center;
+  width: 82px;
+  height: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  font-size: 22px;
+}
+
+button:hover, .highlight {
+  background: rgba(255, 251, 119, 0.67) !important
+}
+
+#start:active {
+  background: rgb(208, 208, 145) !important;
+}
+
+.blink {
+  opacity: .6;
+}

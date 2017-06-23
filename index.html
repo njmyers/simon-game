@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <script type="text/javascript" src="../wad.js"></script>
+</head>
+
+<body>
+<div class="background">
+  <div class="container-fluid">
+  <h1>Simon Game</h1>
+    <div class="game-container">
+      <div class="simon-buttons">
+        <div class="top-row">
+          <span class="green-border"></span><span id="green"></span>
+          <span class="blue-border"></span><span id="blue"></span>
+        </div>
+        <div class="bottom-row">
+          <span class="yellow-border"></span><span id="yellow"></span>
+          <span class="red-border"></span><span id="red"></span>
+        </div>
+        <div class="circle-border">
+          <div class="circle-display">
+            <div class="display-container">
+              <div class="counter-container">
+                <div id="counter"></div>
+                <button id="strict">strict</button>
+                <button id="pace">slow</button>
+                <button id="start">start</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>A new musical symphony on each reload</h3>
+  </div>
+</div>
+  <script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
